@@ -1,35 +1,83 @@
 /* Main Stylesheet for AlkeWallet */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
   margin: 0;
   padding: 0;
   padding-top: 50px;
-  background: linear-gradient(135deg, #1b354d 0%, #738b8f 50%, #1b496e 100%);
+  background: linear-gradient(135deg, #434c57 0%, #000000 100%);
   min-height: 100vh;
-  color: white;
+  color: #eeeeee;
   text-align: center;
 }
 
 .btn {
   display: inline-block;
-  padding: 10px 20px;
-  background-color: #1d446d;
-  color: white;
+  padding: 12px 30px;
+  background-color: #ffffff;
+  color: #000000;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 1px solid white;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #ffffff;
 }
 
 .card-3d {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
-  padding: 2rem;
+  background: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  padding: 3rem;
   transform-style: preserve-3d;
   transition: transform 0.3s;
 }
 
 .card-3d:hover {
   transform: translateY(-5px);
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  /* Applying glassmorphism to general containers if main tag isn't enough */
+  background: rgba(20, 20, 20, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+a {
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Form Styles for cohesive look */
+input {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: white;
+  padding: 10px;
+  margin: 10px 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus {
+  outline: none;
+  border-color: rgba(255, 255, 255, 0.5);
 }
