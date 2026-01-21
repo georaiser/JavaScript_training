@@ -21,13 +21,34 @@
         <!-- align-items-center: Vertically center items -->
         <!-- mb-4: Margin bottom spacing -->
         <div class="d-flex align-items-center mb-4">
-            <!-- me-3: Margin right spacing -->
-            <!-- bi-chevron-left: Left arrow icon -->
             <a href="menu.html" class="text-white me-3"><i class="bi bi-chevron-left fs-4"></i></a>
-            <!-- flex-grow-1: Take up available space -->
-            <!-- text-center: Center text -->
-            <!-- pe-4: Padding right to balance the back button spacing -->
             <h4 class="mb-0 flex-grow-1 text-center pe-4">Deposit Funds</h4>
+        </div>
+
+        <!-- Payment Method -->
+        <h5 class="text-start mb-3">Payment Method</h5>
+        <div class="d-flex overflow-auto pb-2 mb-4" style="gap: 15px;">
+            <!-- Card 1 -->
+            <a href="#" class="mini-card mini-card-visa text-white text-decoration-none" style="min-width: 140px; height: 80px; padding: 12px;">
+                <i class="bi bi-credit-card-2-front fs-5"></i>
+                <div>
+                    <div class="small opacity-75">Visa</div>
+                    <div class="fw-bold">**** 4242</div>
+                </div>
+            </a>
+            <!-- Card 2 -->
+            <a href="#" class="mini-card mini-card-master text-white text-decoration-none" style="min-width: 140px; height: 80px; padding: 12px;">
+                <i class="bi bi-credit-card-2-front fs-5"></i>
+                <div>
+                    <div class="small opacity-75">Mastercard</div>
+                    <div class="fw-bold">**** 8821</div>
+                </div>
+            </a>
+            <!-- Add New -->
+            <a href="#" class="mini-card mini-card-add text-decoration-none" style="min-width: 140px; height: 80px; padding: 12px;">
+                <i class="bi bi-plus-circle fs-5"></i>
+                <div class="small">New Card</div>
+            </a>
         </div>
 
         <form id="depositForm" class="text-start" style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 20px;">
@@ -36,6 +57,12 @@
                 <div class="position-relative">
                     <span class="position-absolute text-white" style="top: 15px; left: 15px;">$</span>
                     <input type="number" placeholder="0.00" required style="padding-left: 35px; font-size: 1.2rem;">
+                </div>
+                <!-- Quick Amounts -->
+                <div class="d-flex gap-2 mt-2">
+                    <button type="button" class="btn btn-sm btn-outline-light flex-fill" style="border-radius: 10px; border-color: rgba(255,255,255,0.1);">$10</button>
+                    <button type="button" class="btn btn-sm btn-outline-light flex-fill" style="border-radius: 10px; border-color: rgba(255,255,255,0.1);">$20</button>
+                    <button type="button" class="btn btn-sm btn-outline-light flex-fill" style="border-radius: 10px; border-color: rgba(255,255,255,0.1);">$50</button>
                 </div>
             </div>
             <button type="submit" class="btn w-100 mt-2 btn-submit shadow-none">Make Deposit</button>
