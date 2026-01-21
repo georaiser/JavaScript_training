@@ -1,6 +1,6 @@
 # Cronograma del BootCamp - Fullstack JavaScript
 
-Este documento describe la estructura y los módulos de aprendizaje del BootCamp. Los temas son comunes para todos los grupos (A y B).
+Este documento describe la estructura y los módulos de aprendizaje del BootCamp. 
 
 ## Módulos del Curso
 
@@ -39,7 +39,7 @@ El programa consta de los siguientes módulos principales, enfocados en el desar
 - Desarrollo de APIs RESTful robustas.
 
 ### 9. Desarrollo de Portafolio de un Producto Digital
-    
+
 - Creación de un proyecto integrador y portafolio profesional.
 
 ### 10. Desarrollo de Empleabilidad en la Industria Digital
