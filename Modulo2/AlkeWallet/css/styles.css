@@ -159,7 +159,6 @@ input:focus {
 }
 
 .balance-graph {
-  width: 300px; /* Fixed width for side-by-side layout */
   height: 50px;
   grid-column: auto; /* Reset grid placement */
 }
@@ -184,22 +183,22 @@ input:focus {
 }
 
 .btn-action {
-  background: rgba(255,255,255,0.05);
+  background: rgba(140, 148, 175, 0.05);
   border: 1px solid rgba(255,255,255,0.1);
   color: white;
-  padding: 15px;
+  padding: 1px;
   border-radius: 15px;
   display: flex;
   flex-direction: column; /* Fixed: Stack icon and text */
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 1px;
   text-decoration: none;
   transition: all 0.3s;
 }
 
 .btn-action:hover {
-  background: rgba(0, 196, 180, 0.1);
+  background: rgba(140, 213, 216, 0.514);
   border-color: #00C4B4;
   text-decoration: none;
   color: white;
@@ -225,8 +224,8 @@ input:focus {
 }
 
 .mini-card-visa { background: linear-gradient(135deg, #1a2980 0%, #26d0ce 100%); }
-.mini-card-master { background: linear-gradient(135deg, #cc2b5e 0%, #753a88 100%); }
-.mini-card-add { background: rgba(255,255,255,0.05); border: 1px dashed rgba(255,255,255,0.3); align-items: center; justify-content: center; }
+.mini-card-master { background: linear-gradient(135deg, #454d34 0%, #c0c79a 100%); }
+.mini-card-add { background: linear-gradient(135deg, #282927 0%, #aaaaa8 100%); }
 
 .icon-circle {
     display: flex;
