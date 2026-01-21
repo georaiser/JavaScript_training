@@ -1,6 +1,8 @@
 /* Main Stylesheet for AlkeWallet */
 
-/* 1. CORE STYLES */
+/* =========================================
+   1. CORE STYLES & VARIABLES
+   ========================================= */
 body {
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
   margin: 0;
@@ -23,7 +25,9 @@ a:hover {
   text-decoration: underline;
 }
 
-/* 2. LAYOUT */
+/* =========================================
+   2. LAYOUT
+   ========================================= */
 .container {
   width: 90%; /* Wider on mobile */
   max-width: 500px; /* Max width for app feel */
@@ -38,9 +42,11 @@ a:hover {
   padding-bottom: 100px; /* Space for bottom nav */
 }
 
-/* 3. COMPONENTS */
+/* =========================================
+   3. COMPONENTS
+   ========================================= */
 
-/* Buttons */
+/* --- Buttons --- */
 .btn {
   display: inline-block;
   padding: 12px 30px;
@@ -59,7 +65,7 @@ a:hover {
 }
 
 .btn-welcome {
-  background-color: #19417e;
+  background-color: #4d607e;
   border: none;
   color: #ffffff;
   border-radius: 16px;
@@ -67,14 +73,14 @@ a:hover {
 }
 
 .btn-welcome:hover {
-  background-color: #133363;
+  background-color: #3e4e50;
   color: white;
 }
 
 .btn-submit {
   display: inline-block;
   padding: 15px;
-  background-color: #00C4B4; 
+  background-color: #425c6d; 
   color: #ffffff;
   text-decoration: none;
   border-radius: 12px;
@@ -86,11 +92,34 @@ a:hover {
 }
 
 .btn-submit:hover {
-  background-color: #00a396;
+  background-color: #4f5f80;
   color: white;
 }
 
-/* Inputs */
+/* Action Buttons (Menu Grid) */
+.btn-action {
+  background: rgba(140, 148, 175, 0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: white;
+  padding: 1px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column; /* Fixed: Stack icon and text */
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn-action:hover {
+  background: rgba(140, 213, 216, 0.514);
+  border-color: #00C4B4;
+  text-decoration: none;
+  color: white;
+}
+
+/* --- Form Inputs --- */
 input {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -108,7 +137,7 @@ input:focus {
   border-color: rgba(255, 255, 255, 0.5);
 }
 
-/* Bottom Navigation */
+/* --- Bottom Navigation --- */
 .bottom-nav {
   position: fixed;
   bottom: 20px;
@@ -151,9 +180,11 @@ input:focus {
   color: #00C4B4; /* Teal Accent */
 }
 
-/* 4. MODULES */
+/* =========================================
+   4. MODULES
+   ========================================= */
 
-/* Dashboard (menu.html) */
+/* --- Dashboard Modules --- */
 .balance-card {
   text-align: left;
   margin-bottom: 20px;
@@ -165,7 +196,7 @@ input:focus {
 
 .balance-graph {
   height: 50px;
-  grid-column: auto; /* Reset grid placement */
+  grid-column: auto;
 }
 
 .balance-title {
@@ -180,36 +211,7 @@ input:focus {
   margin: 5px 0;
 }
 
-.action-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  margin-bottom: 25px;
-}
-
-.btn-action {
-  background: rgba(140, 148, 175, 0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-  color: white;
-  padding: 1px;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column; /* Fixed: Stack icon and text */
-  align-items: center;
-  justify-content: center;
-  gap: 1px;
-  text-decoration: none;
-  transition: all 0.3s;
-}
-
-.btn-action:hover {
-  background: rgba(140, 213, 216, 0.514);
-  border-color: #00C4B4;
-  text-decoration: none;
-  color: white;
-}
-
-/* Mini Cards for "My Cards" Strategy */
+/* Mini Cards (My Cards) */
 .mini-card {
   min-width: 150px;
   height: 100px;
@@ -238,14 +240,14 @@ input:focus {
     justify-content: center;
 }
 
+/* Contacts (Send Money) */
 .contact-card {
     min-width: 60px;
     text-align: center;
     color: #ccc;
 }
 
-
-/* Transaction List (transactions.html) */
+/* --- Transaction List --- */
 .transaction-item {
   display: flex;
   align-items: center;
