@@ -37,6 +37,10 @@ body {
   text-align: center;
 }
 
+.brand-title {
+  letter-spacing: -1px;
+}
+
 a { color: #cccccc; text-decoration: none; transition: color 0.3s; }
 a:hover { color: #ffffff; text-decoration: underline; }
 
@@ -57,7 +61,7 @@ a:hover { color: #ffffff; text-decoration: underline; }
   padding-bottom: 100px; 
 }
 
-/* Reusable Glass Utility */
+/* Glass Utility */
 .glass-panel, .glass-form, .splash-container, .transaction-item {
   background: var(--glass-bg-light);
   border: 1px solid var(--glass-border);
@@ -65,6 +69,11 @@ a:hover { color: #ffffff; text-decoration: underline; }
 }
 
 .splash-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   box-shadow: 0 20px 50px rgba(0,0,0,0.5);
 }
 
@@ -74,30 +83,8 @@ a:hover { color: #ffffff; text-decoration: underline; }
 }
 
 /* Avatar Components */
-.logo-circle-container {
-  width: 120px; height: 120px;
-  background: rgba(255, 255, 255, 0.03); /* Transparent dark */
-  border: 2px solid transparent;
-  border-radius: 50%;
-  background-image: linear-gradient(#2b303b, #2b303b), linear-gradient(135deg, #00C4B4, #1a2980);
-  background-origin: border-box;
-  background-clip: content-box, border-box;
-  box-shadow: 0 0 40px rgba(0, 196, 180, 0.2);
-  display: flex; /* Ensure centering */
-  align-items: center;
-  justify-content: center;
-}
-
-.logo-bg-decoration {
-  width: 160px; height: 160px;
-  top: -20px; left: -20px;
-  z-index: -1;
-}
-
-.avatar-circle-lg { width: 100px; height: 100px; border: 1px solid rgba(89, 156, 153, 0.788); }
 .avatar-circle-sm { width: 50px; height: 50px; }
 .avatar-circle-xs { width: 40px; height: 40px; }
-.avatar-circle-dashed { border: 1px dashed rgba(255,255,255,0.3); }
 
 /* =========================================
    3. COMPONENTS
@@ -138,7 +125,9 @@ a:hover { color: #ffffff; text-decoration: underline; }
   border-radius: var(--radius-sm);
   width: 100%;
   font-size: 1rem;
+  font-size: 1rem;
   padding: 15px;
+  letter-spacing: 1px;
 }
 .btn-submit:hover { background-color: #4f5f80; color: white; }
 
@@ -279,3 +268,11 @@ input:focus { outline: none; border-color: rgba(255, 255, 255, 0.5); }
 .t-amount { font-weight: bold; }
 .t-amount.negative { color: #ff6b6b; }
 .t-amount.positive { color: var(--primary-accent); }
+
+/* --- Utilities --- */
+.scroll-row {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  padding-bottom: 0.5rem;
+}
