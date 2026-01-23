@@ -14,16 +14,24 @@
 <body>
     <main class="container">
         <!-- Header -->
+        <!-- d-flex, justify-content-between, align-items-center: Flex header layout (Bootstrap) -->
+        <!-- mb-4: Margin bottom (Bootstrap) -->
         <div class="d-flex justify-content-between align-items-center mb-4">
+            <!-- d-flex: Nested flex container (Bootstrap) -->
             <div class="d-flex align-items-center">
+                <!-- rounded-circle: Circular shape (Bootstrap), me-2: Margin end (Bootstrap) -->
                 <div class="rounded-circle me-2 avatar-circle-xs">
                     <i class="bi bi-person-fill"></i>
                 </div>
+                <!-- text-start: Left align text (Bootstrap) -->
                 <div class="text-start">
+                    <!-- d-block: Display block (Bootstrap) -->
                     <small class="d-block">Welcome back</small>
+                    <!-- fw-bold: Bold font (Bootstrap) -->
                     <span class="fw-bold" id="userName">User</span>
                 </div>
             </div>
+            <!-- fs-4: Font size 4 (Bootstrap) -->
             <i class="bi bi-bell fs-4"></i>
         </div>
 
@@ -55,12 +63,16 @@
         <!-- Accounts -->
         <div class="mb-4">
             <h5 class="mb-3 d-flex justify-content-between align-items-center">Accounts</h5>
+            <!-- d-flex, justify-content-between: Layout (Bootstrap), gap-2: Gap between items (Bootstrap) -->
             <div class="d-flex justify-content-between gap-2">
                 
+                <!-- flex-fill: Flex item grows to fill space (Bootstrap) -->
                 <a href="#" class="btn-action flex-fill">
                     <div class="icon-circle mb-1">
+                        <!-- fs-5: Font size 5 (Bootstrap) -->
                         <i class="bi bi-wallet2 fs-5"></i>
                     </div>
+                    <!-- text-center: Center text (Bootstrap), lh-sm: Line height small (Bootstrap) -->
                     <div class="text-center lh-sm">
                         <span class="account-label">Main Account</span>
                         <span class="account-balance">$829,990</span>
@@ -131,6 +143,7 @@
             <a href="#" class="mini-card mini-card-visa text-highlight">
                 <i class="bi bi-credit-card-2-front fs-5"></i>
                 <div>
+                    <!-- small: Small font (Bootstrap), opacity-75: 75% opacity (Bootstrap) -->
                     <div class="small opacity-75">Visa</div>
                     <div class="fw-bold">**** 4242</div>
                 </div>

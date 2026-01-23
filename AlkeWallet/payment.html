@@ -15,11 +15,9 @@
     <!-- container: Center content with responsive width -->
     <main class="container">
         <!-- Header -->
-        <!-- d-flex: Flexbox layout -->
-        <!-- align-items-center: Vertically center items -->
-        <!-- mb-4: Margin bottom spacing -->
         <div class="d-flex align-items-center mb-4">
             <a href="menu.html" class="text-highlight me-3"><i class="bi bi-chevron-left fs-4"></i></a>
+            <!-- mb-0: No margin bottom, flex-grow-1: Fill space, text-center: Center text, pe-4: Padding right 4 -->
             <h4 class="mb-0 flex-grow-1 text-center pe-4">Payment</h4>
         </div>
 
@@ -68,10 +66,12 @@
                     <input type="number" id="depositAmount" placeholder="0.00" required class="input-amount">
                 </div>
                 <!-- Quick Amounts -->
+                <!-- Quick Amounts -->
                 <div class="d-flex gap-2 mt-2">
-                    <button type="button" class="btn btn-sm btn-outline-light flex-fill btn-quick-amount">$10</button>
-                    <button type="button" class="btn btn-sm btn-outline-light flex-fill btn-quick-amount">$20</button>
-                    <button type="button" class="btn btn-sm btn-outline-light flex-fill btn-quick-amount">$50</button>
+                    <!-- Removed btn-outline-light to depend on custom btn-quick-amount style -->
+                    <button type="button" class="btn btn-sm flex-fill btn-quick-amount">$10</button>
+                    <button type="button" class="btn btn-sm flex-fill btn-quick-amount">$20</button>
+                    <button type="button" class="btn btn-sm flex-fill btn-quick-amount">$50</button>
                 </div>
             </div>
             <button type="submit" class="btn w-100 mt-2 btn-submit shadow-none">Make Deposit</button>

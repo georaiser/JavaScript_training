@@ -15,11 +15,9 @@
     <!-- container: Standard Bootstrap container class -->
     <main class="container">
         <!-- Header -->
-        <!-- d-flex: Flexbox layout -->
-        <!-- align-items-center: Vertically center items -->
-        <!-- mb-4: Margin bottom spacing -->
         <div class="d-flex align-items-center mb-4">
             <a href="menu.html" class="text-highlight me-3"><i class="bi bi-chevron-left fs-4"></i></a>
+            <!-- mb-0: No margin bottom (Bootstrap), flex-grow-1: Fill space (Bootstrap), text-center: Center alignment (Bootstrap), pe-4: Right padding (Bootstrap) -->
             <h4 class="mb-0 flex-grow-1 text-center pe-4">Send Money</h4>
         </div>
 
@@ -27,22 +25,27 @@
         <h5 class="text-start mb-3">Recent</h5>
         <div class="scroll-row mb-4">
             <!-- Contact 1 -->
+            <!-- text-decoration-none: Remove link underline (Bootstrap) -->
             <a href="#" class="contact-card text-decoration-none">
-                <div class="bg-secondary rounded-circle mx-auto mb-2 d-flex align-items-center justify-content-center avatar-circle-sm">
+                <!-- rounded-circle: 50% radius (Bootstrap), mx-auto: Horizontal center (Bootstrap), mb-2: Margin bottom (Bootstrap) -->
+                <!-- d-flex, align-items-center, justify-content-center: Flex centering (Bootstrap) -->
+                <!-- Removed bg-secondary to use custom glass background from avatar-circle-sm -->
+                <div class="rounded-circle mx-auto mb-2 d-flex align-items-center justify-content-center avatar-circle-sm">
                     <i class="bi bi-person-fill fs-3 text-highlight"></i>
                 </div>
+                <!-- small: Small text (Bootstrap) -->
                 <div class="small text-highlight">Mom</div>
             </a>
             <!-- Contact 2 -->
             <a href="#" class="contact-card text-decoration-none">
-                <div class="bg-secondary rounded-circle mx-auto mb-2 d-flex align-items-center justify-content-center avatar-circle-sm">
+                <div class="rounded-circle mx-auto mb-2 d-flex align-items-center justify-content-center avatar-circle-sm">
                      <i class="bi bi-person-fill fs-3 text-highlight"></i>
                 </div>
                 <div class="small text-highlight">Dad</div>
             </a>
             <!-- Contact 3 -->
             <a href="#" class="contact-card text-decoration-none">
-                <div class="bg-secondary rounded-circle mx-auto mb-2 d-flex align-items-center justify-content-center avatar-circle-sm">
+                <div class="rounded-circle mx-auto mb-2 d-flex align-items-center justify-content-center avatar-circle-sm">
                      <i class="bi bi-person-fill fs-3 text-highlight"></i>
                 </div>
                 <div class="small text-highlight">Willy</div>
