@@ -48,8 +48,6 @@
   --bg-avatar: var(--glass-border);
   --bg-input-login: rgba(0, 0, 0, 0.2);
   --border-input-focus: rgba(255, 255, 255, 0.5);
-  --border-input-focus: rgba(255, 255, 255, 0.5);
-  --border-input-focus: rgba(255, 255, 255, 0.5);
   
   /* Shadow Depth */
   --shadow-depth: rgba(0, 0, 0, 0.6);
