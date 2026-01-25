@@ -7,7 +7,7 @@
   --container-max-width: 500px;
 
   /* 2. Brand Colors */
-  --color-primary: #00C4B4;
+  --color-primary: #3fcabf;
   --color-secondary: #393299;
   --color-bg-start: #434c57;
   --color-bg-end: #000000;
@@ -49,7 +49,7 @@ body {
 }
 
 .brand-title {
-  letter-spacing: -1px;
+  letter-spacing: -3px;
 }
 
 a { color: var(--text-muted); text-decoration: none; transition: color var(--transition-normal); }
